@@ -40,6 +40,7 @@ export function app(): express.Express {
       const apiRes = await fetch('https://jsonplaceholder.typicode.com/posts/1');
       const apiData = await apiRes.json();
       req.apiData = apiData;
+      req.apiData.slug = 'test';
     } catch (e) {
       req.apiData = null;
     }

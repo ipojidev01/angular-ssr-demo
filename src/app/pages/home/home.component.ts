@@ -29,7 +29,7 @@ const API_DATA_KEY = makeStateKey<any>('apiData');
           <h3>Server Response:</h3>
           <pre>{{ apiData | json }}</pre>
           <!-- <pre>{{ apiData[0].message }}</pre> -->
-           <a href="'/home/'+{{apiData.id}}">{{apiData.title}}</a>
+           <a href="/{{apiData.id}}">{{apiData.title}}</a>
           <p class="data-source">
             <strong>Source:</strong> 
             <span *ngIf="isServerRendered; else clientRendered">Server-Side Rendering</span>
