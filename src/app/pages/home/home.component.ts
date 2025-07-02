@@ -19,6 +19,7 @@ const API_DATA_KEY = makeStateKey<any>('apiData');
         <div class="hero-buttons">
           <a routerLink="/products" class="btn btn-primary">View Products</a>
           <a routerLink="/about" class="btn btn-secondary">Learn More</a>
+          <a routerLink="/{{apiData.id}}" class="btn btn-secondary">{{apiData.id}}</a>
         </div>
       </header>
 
